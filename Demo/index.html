@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 0 auto;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+    .barraX{
+        width: 90%;
+        height: 1px;
+        background-color: black;
+    }
+    .barraY{
+        width: 1px;
+        height: 90%;
+        background-color: black;
+    }
+
+    .Cuerpo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Menu {
+        width: 95%;
+        min-width: 80%;
+        height: 50px;
+        min-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid;
+      }
+
+      .Menu ul {
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .Menu li {
+        list-style: none;
+        display: flex;
+        width: 50px;
+      }
+
+      .Menu a {
+        text-align: center;
+        text-decoration: none;
+        color: rgb(61, 61, 61);
+        font-size: larger;
+        transition: 0.7s all;
+        border-bottom: 1px solid transparent;
+      }
+
+      .Menu a:hover {
+        color: black;
+        transition: 0.5s all;
+        border-bottom: 1px solid;
+      }
+
+      .All {
+        width: 98%;
+        height: 92vh;
+        display: flex;
+        align-items: center;
+      }
+    .Juegos{
+        margin: 5px;
+        width: 80%;
+        height: 90%;
+
+    }
+    .Categoria{
+        margin: 5px;
+        width: 20%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .Categoria span{
+        font-size: 27px;
+        margin: 10px;
+    }
+    .Categoria ul{
+        margin-top: 20px;
+    }
+    .Categoria li{
+        width: 100%;
+        align-items: center;
+        list-style: none;
+    }
+
+    .Categoria a{
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(61, 61, 61);
+        transition: 0.7s all;
+        border-bottom: 1px solid transparent;
+    }
+
+    .Categoria a:hover {
+        color: black;
+        transition: 0.5s all;
+        border-bottom: 1px solid;
+      }
+    </style>
+
+    <section class="Cuerpo">
+    <nav class="Menu">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+
+    <section class="All">
+        <div class="Juegos">
+            {% block content %}
+                <!-- Aquí se insertará el contenido de cada página -->
+            {% endblock %}
+        </div>
+        <div class="barraY"></div>
+        <div class="Categoria">
+            <span>Categoria</span>
+
+            <div class="barraX"></div>
+
+            <ul>
+                <li><a href="">Terror</a></li>
+                <li><a href="">Carreras</a></li>
+                <li><a href="">Aventuras</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
