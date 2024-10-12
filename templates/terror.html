@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    {% for juego in juegos %}
+    <div class="game-card">
+        <img class="game-image" src="{{ juego[7] }}" alt="Imagen del juego">
+        <h3 class="game-title">{{ juego[1] }}</h3>
+        <p class="game-developer">Desarrolladora: {{ juego[2] }}</p>
+        <p class="game-category">Categoría: {{ juego[3] }}</p>
+        <p class="game-year">Año: {{ juego[4] }}</p>
+        <a class="game-link android-link" href="{{ juego[5] }}" target="_blank">Link Android</a>
+        <a class="game-link pc-link" href="{{ juego[6] }}" target="_blank">Link PC</a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
+

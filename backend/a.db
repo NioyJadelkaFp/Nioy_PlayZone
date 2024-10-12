@@ -1,0 +1,26 @@
+INSERT INTO juegos (nombre, desarrolladora, categoria, año, links_android, link_pc, link_img)
+VALUES 
+    ("Five Nights at Freddy's", "Scott Cawthon", "Horror", 2014, 
+    "https://www.mediafire.com/file/rmodvm58m8kzj21/FiveNightsatFreddys.exe/file", 
+    "https://www.mediafire.com/file/30yvibnc5n26dia/com.illumix.fnafar16.1.0.rar/file", 
+    "https://i.postimg.cc/8PGCWfV0/fnaf1.webp"),
+    
+    ("Five Nights at Freddy's 2", "Scott Cawthon", "Horror", 2014, 
+    "https://www.mediafire.com/file/v8a5hz248mosuc9/Five_Nights_At_Freddys_2.rar/file", 
+    "https://www.mediafire.com/file/t016zfmqhnn16hk/com.scottgames.fnaf22.0.5.rar/file", 
+    "https://i.postimg.cc/dt9V9Qst/fnaf2.webp"),
+    
+    ("Five Nights at Freddy's 3", "Scott Cawthon", "Horror", 2015, 
+    "https://www.mediafire.com/file/5tvyzr4tz1lwf9p/FiveNightsatFreddys3.exe/file", 
+    "https://www.mediafire.com/file/vjtpa0xvgluq1tk/com.scottgames.fnaf32.0.2.rar/file", 
+    "https://i.postimg.cc/cJv1ZQQr/fnaf3.webp"),
+    
+    ("Five Nights at Freddy's 4", "Scott Cawthon", "Horror", 2015, 
+    "https://www.mediafire.com/file/dpu5m43suvzehq0/FNAF4_OVF2.rar/file", 
+    "https://www.mediafire.com/file/w02g1zg6ozekq1b/com.scottgames.fnaf42.0.2.rar/file", 
+    "https://i.postimg.cc/SxTQwZYB/fnaf4.webp"),
+    
+    ("Five Nights at Freddy's: Sister Location", "Scott Cawthon", "Horror", 2016, 
+    "https://www.mediafire.com/file/jpqh04g78bpgvz4/SisterLocation.exe/file", 
+    "https://www.mediafire.com/file/yvweb823beaxg4k/com.scottgames.sisterlocation2.0.3.rar/file", 
+    "https://i.postimg.cc/W1bbYRzm/fnaf5.webp");
